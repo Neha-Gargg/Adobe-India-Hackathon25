@@ -54,7 +54,7 @@ Key techniques:
     { "level": "H3", "text": "History of AI", "page": 3 }
   ]
 }
-
+```
 
 # approach_explanation.md
 
