@@ -21,11 +21,17 @@ This project reimagines PDF reading by extracting structured outlines and delive
 ## 📁 Folder Structure
 
 ├── input/ # Input PDFs for processing
+
 ├── output/ # Output JSONs for each input PDF
+
 ├── src/ # Source code for heading extraction and persona analysis
+
 ├── models/ # Lightweight models (if any used)
+
 ├── Dockerfile # Container setup
+
 ├── approach_explanation.md # (Round 1B) 300–500 word explanation of methodology
+
 └── README.md # You're here!
 
 ---
