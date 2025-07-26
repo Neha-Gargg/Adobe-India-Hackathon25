@@ -1,4 +1,0 @@
-pdfplumber
-scikit-learn
-numpy
-PyMuPDF
