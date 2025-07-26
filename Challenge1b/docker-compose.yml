@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  dot_extractor:
+    build: .
+    container_name: connecting_the_dots
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python extract_headings.py
+
+  persona_ranker:
+    build: .
+    container_name: persona_ranker
+    depends_on:
+      - dot_extractor
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python persona_ranker.py
+
